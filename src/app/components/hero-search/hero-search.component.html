@@ -1,0 +1,32 @@
+<div class="row" id="search-component">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card bg-light">
+            <div class="card-body">
+                <form class="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="hero-search-field">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </span>
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Hero Search"
+                                aria-label="Hero"
+                                aria-describedby="hero-search-field"
+                                #searchBox
+                                id="search-box"
+                                (keyup)="search(searchBox.value)"
+                            >
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let hero of heroes | async" (click)="gotoDetail(hero)">
+                            {{hero.name}}
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
