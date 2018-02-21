@@ -10,13 +10,13 @@ The purpose of this is to provide a seed for Angular 2 with the following...
 
 After cloning this repo, you will need to...
 * Install [Angular CLI](https://cli.angular.io/) globally (npm install -g @angular/cli)
-** If you have it installed previously, [you must upgrade it per these instructions](https://github.com/angular/angular-cli/wiki/stories-1.0-update).
+    * If you have it installed previously, [you must upgrade it per these instructions](https://github.com/angular/angular-cli/wiki/stories-1.0-update).
 * Upgrade node (if on a Mac use [Homebrew](https://brew.sh/))
-** brew update
-** brew doctor
-** brew upgrade node
+    * brew update
+    * brew doctor
+    * brew upgrade node
 * npm install
-** you might get a node-gyp Python error, if so type `npm config set python python2.7` [per these instructions](https://stackoverflow.com/questions/20454199/how-to-use-a-different-version-of-python-during-npm-install)
+    * you might get a node-gyp Python error, if so type `npm config set python python2.7` [per these instructions](https://stackoverflow.com/questions/20454199/how-to-use-a-different-version-of-python-during-npm-install)
 
 ## Development server
 
